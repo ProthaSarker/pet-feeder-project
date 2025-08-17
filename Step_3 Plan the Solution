@@ -1,0 +1,13 @@
+
+1.	Start the system when powered ON.
+2.	Check time: Is it feeding time (08:00am or 06:00pm)?
+  o	If no → wait and loop
+  o	If yes → proceed.
+3.	Check food availability.
+  o	If Empty → send alert: Food is not available
+  o	If Available → dispense food
+4.	Wait 10 minutes after dispensing.
+5.	Check weight:
+  o	If weight decreased (pet ate) → success.
+  o	If unchanged (pet did not eat) → send alert: Pet did not eat
+6.	End process. 
