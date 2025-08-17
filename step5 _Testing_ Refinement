@@ -1,0 +1,34 @@
+Step 5: Testing & Refinement
+Test Case Table
+Test Case	                    Input(Condition)	   Expected Output	         Actual Result	          Pass/Fail
+1. Feeding at correct time	   CurrentTime =8:00am, FoodLevel = FULL	
+Motor releases 100g food, log success if eaten by pet
+	Dispensed 100g, weight decreased, feeding logged	PASS
+2. Feeding at wrong time	CurrentTime = 10:30am	No food dispensed, system stays idle	System stayed idle	PASS
+3. Hopper empty	CurrentTime = 6:00pm, FoodLevel = EMPTY	No food alert, logging failure	Alert displayed, log recorded	PASS
+4. Pet does not eat	CurrentTime = 8:00am, FoodLevel = FULL, BowlWeight no change after 10 mins	Pet did not eat, log failure	Warning sent, failure recorded	PASS
+5. Power OFF	SystemStatus = OFF	System does nothing	System inactive	PASS
+6. Partial food eaten	CurrentTime = 6:00 pm, BowlWeight decreases slightly	Noted partial success (pet consumed some portions)	Weight decreased, feeding was observed	PASS
+
+Refinement Ideas (Improvements)
+
+•Improve the alert system: Don't just issue alarms, include text message or app notifications so employees can be notified instantly.
+
+• Differing serving sizes: Allow owners to customize the quantity of food dispensed (e.g., 50g, 100g, 150g).
+
+•Battery backup: Offer backup power so the system can continue operating in the event of a loss of power.
+
+Pet presence sensor: Utilize a camera or a motion sensor to verify the presence of pets prior to dispersal.
+
+• Learning ability: Apply basic machine learning in order to learn and adapt feeding size based on feeding behavior of the pet.
+
+•Don't wastefully feed: Don't overfill the food if already in the bowl in an effort not to waste/overfeed.
+
+• Error handling: Alerting of cell sensor errors (weight, hopper, or motor) so that issues are addressed timely.
+
+• Tracking of pet activity: Enable the sensor or camera to confirm the presence of the pet in the bowl prior to release.
+
+• Multi-pet mode: In case it detects more than one pet, be in high alert and suggest manual feeding.
+
+• Adaptive scheduling: Plan time for feeding if the pet is a regular skipee.
+
