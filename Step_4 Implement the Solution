@@ -1,0 +1,28 @@
+
+SET feeding_times = [08:00 am, 06:00 pm]
+SET current_time = 08:00 am
+SET food_level = Full
+SET bowl_weight = 0
+
+IF current_time is in feeding_times THEN,
+Check the food level
+
+IF food_level is EMPTY THEN
+Send_ alert: No food available
+
+
+IF food_ level is Full THEN
+ If old_weight is equal to bowl_weight, THEN
+ bowl_weight is equal to bowl_weight +100g.
+
+Wait 10 minutes after dispensing food.
+
+ If bowl_weight is less than old_weight, THEN,
+Pet ate well
+
+ELSE
+The pet didn't eat.
+Inform the feeder
+
+END IF
+END SYSTEM
