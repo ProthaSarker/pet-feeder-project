@@ -1,0 +1,33 @@
+Problem Statement
+The animal shelter needs a cheap, programmable automated feeding system that will make feeding the animals easier and better for their health. It should be able to tell when cats and dogs are eating and when they are done. If feeding doesn't work (no food is given or animals don't eat), it should tell the staff. First, it should be made into a computer program, and then it should be built into real parts.
+
+Features the Feeder Must Include
+1.	Scheduled feeding: Dispense food at predefined times (e.g., 8:00 AM and 6:00 PM).
+2.	Food monitoring: Detect whether food is present in the storage container.
+3.	Consumption monitoring: Measure if the pet has eaten within a fixed period after feeding.
+4.	Alerts and notifications: Notify staff if food is not dispensed or if pets do not eat.
+5. Logging system: Document successful and unsuccessful feeding attempts for record purposes.
+       6.	economical design: Should be achievable employing inexpensive parts (servo motor, sensors, inexpensive controller).
+
+Inputs and Outputs
+Inputs:
+• Feeding schedule: Time stored in the system (real-time clock).
+•	Food container sensor: It checks if the food is stored in the storage bin.
+• Bowl weight sensor: It tracks food amount in the bowl pre- and post-feeding.
+Outputs:
+Motor control: Turns servo motor to dispense food.
+• Alert system: Notifies workers of errors (e.g., text message, buzzer).
+• Feeding logs: Record outcome of each attempt at feeding (success/failure).
+
+Assumptions and Limitation 
+• It can only dispense one kind of dry food
+ • Animals can't change when they eat; the times are set and fixed (staff-controlled times). 
+ • There is only one bowl in each system. 
+ • Sensors can only be off by a small amount (±5g when measuring weight). 
+ • The same amount of food is given each time (for example, 100g per feeding). 
+ • The power and connection are stable, but they should always be backed up (this is something that could be better in the future). 
+•	If the food runs out or the alarm goes off, the staff must intervene.
+
+System block diagram: 
+    
+ 
