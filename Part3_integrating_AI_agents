@@ -1,0 +1,16 @@
+On this page, I utilized Microsoft Copilot while reviewing my solution and helping in the improvement of the logic as well as documentation of my automated feeder system.
+
+Prompt 1: “Can you review my Word Code for the pet feeder and make recommendations for improvement?”
+Response: Copilot pointed out my Word Code did not specifically refer to sensor faults.It suggested using a SensorStatus variable in the detection of faults in the weight sensor or in the
+hopper sensor. It proposed names that add more information, such as FoodLevelSensor and BowlWeightSensor. Also told me to clarify the timing logic. 
+I changed it, and it did make it easier to read the system.
+
+Prompt 2: "How can i document this project in a professional README.md format?" 
+Copilot provided me a template containing sections such as Overview, Features, Requirements, Installation, Usage, and Limitations. This gave me the choice of reorganizing my documentation 
+such that it would be more professional and industry-standard-compliant than just academic note-taking.
+
+Prompt 3: "In automated pet care, what are the ethical issues in the use of AI?"
+Copilot showed that individuals could make use of AI in a friendlier way, but it had faults. These faults are overreliance on the machine, loss of useful information in case of machine failure,
+and the issue of privacy in the use of the camera. This served to bring home just how essential it is that human beings be in control of AI and use it for a positive purpose. 
+Thinking about the issue: Copilot assisted me in designing my feeder, in proofreading my papers, and in thinking about ethical problems. In the aid it provided, my end product had been 
+refined and seemed more professional.
