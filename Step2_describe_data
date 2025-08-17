@@ -1,0 +1,33 @@
+The automated feeder is given inputs (sensors, time information) and generates outputs (motor movement, alarms, records). Each of the data types is then specified in terms of example values, operation parameters, and restrictions so the system is realistic and testable.
+Inputs
+
+Input Source	                  Data Type	                 Example Values	                             Notes
+Real-Time                       Clock	Time                08:00 am, 06:00 pm	                   Fixed feeding schedules;
+                                                                                        need to be synchronized with schedule
+Food Level Sensor	            Boolean/Enum	             Full, low, empty	              Sensor can be unreliable at very low levels; 
+                                                                                           will activate alarm at empty
+Bowl Weight Sensor	          Numeric (grams)	           0g, 100g, 150g (±5g)	           Pre- and post-feeding weight monitored; 
+                                                                                                 tolerance ±5g
+
+Outputs
+Output                                 Target                      	Data Type                           	Example Values	                           Notes
+Servo Motor	                           Action	                      Release                                  about 100g                    	If you overfeed it, 
+                                                                                                                                 it can only rotate three times per cycle.
+Alert System                       	String / Signal         Food Empty, Pet Not Eating,              Goes off 10 minutes after      Log of Feedings	Realize	Success / Failure
+                                                                 or Dispense Error                 there has been no activity.      Stored on the computer (CSV/log file) 
+                                                                                                                                    and checked daily
+                                                                               
+                                                                                                          
+
+
+
+      
+  Sample Operational Parameters
+•	Feeding Times: 2 times per day (08:00 AM and 06:00 PM).
+•	Food Portion Size: ~100 grams per feed
+•	Bowl Weight Check: Immediately, at the time of immediate dispensing, and 10 minutes thereafter.
+•	Weight: ±5 grams.
+
+Alerts:                                                                          
+• Activated if hopper is not full before feeding.
+• Activated if bowl weight remains the same 10 minutes after feeding.
